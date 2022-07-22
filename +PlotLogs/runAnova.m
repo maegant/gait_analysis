@@ -12,28 +12,28 @@ labels3 = [repmat({'rand'},length(rand_mean),1); ...
 
 if p1<=0.05
     p1color = [0,0,0];
-elseif p1<=0.2
+elseif p1<=0.1
     p1color = [0.5,0.5,0.5];
 end
 if p2<=0.05
     p2color = [0,0,0];
-elseif p2<=0.2
+elseif p2<=0.1
     p2color = [0.5,0.5,0.5];
 end
 if p3<=0.05
     p3color = [0,0,0];
-elseif p3<=0.2
+elseif p3<=0.1
     p3color = [0.5,0.5,0.5];
 end
    
 
-if p1<=0.2
+if p1<=0.1
     text(2,mean(rand_mean)+std(rand_mean),'$\ast$','Interpreter','latex','HorizontalAlignment','left','VerticalAlignment','baseline','FontSize',40,'Color',p1color)
 end
-if p2<=0.2
+if p2<=0.1
     text(3,mean(best_mean)+std(best_mean),'$\ast$','Interpreter','latex','HorizontalAlignment','left','VerticalAlignment','baseline','FontSize',40,'Color',p2color)
 end
-if p3 <= 0.2
+if p3 <= 0.1
     text(3,mean(best_mean)-std(best_mean),'$\Delta$','Interpreter','latex','HorizontalAlignment','center','VerticalAlignment','cap','FontSize',40,'Color',p3color)
 end
 
